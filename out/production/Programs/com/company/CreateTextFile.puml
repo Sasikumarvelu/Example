@@ -1,0 +1,32 @@
+@startuml
+Main <--- WriteTextFile
+Main <--- ReadTextFile
+
++class Main{
++void CreateTextFile()
+ userDirectory : String
+ FileSeparator : String
+ PathofTextFile :String
+ class : File
++static void main ()
+}
++class WriteTextFile{
++void writetofile()
+class : FileWriter
+class : BufferedWriter
+For condition
+IF condition
+}
++class ReadTextFile{
++void readtext()
+class : FileInputStream
+class : InputStreamReader
+class : BufferedReader
+ textline : String
+wordcount : integer
+whitespacescount : integer
+sentencecountintext : integer
+while condition
+Array : String
+}
+@enduml

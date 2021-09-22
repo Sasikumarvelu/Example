@@ -1,0 +1,40 @@
+@startuml
+Information <|--- SQLDataBase
+Information <|--- OracleDataBase
+Information <|--- MongoDataBase
+DataBaseLink <|--- Information
++abstract class Information{
++ void NameofPerson()
++ void EmailId ()
+}
++interface DataBaseLink{
+ + void MobileNo()
+ + void StateName()
+}
++class SQLDataBase{
++void NameofPerson()
++void EmailId ()
++void MobileNo()
++void StateName()
+}
++class OracleDataBase{
++void NameofPerson()
++void EmailId ()
++void MobileNo()
++void StateName()
+}
++class MongoDataBase{
++void NameofPerson()
++void EmailId ()
++void MobileNo()
++void StateName()
+}
+
+
+
+
+
+
+
+
+@enduml
